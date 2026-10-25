@@ -1,0 +1,184 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.encabezado {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 22px;
+  background: #17365d;
+  color: white;
+}
+
+.logo {
+  font-size: 38px;
+}
+
+h1, h2, p {
+  margin-top: 0;
+}
+
+.encabezado h1 {
+  margin-bottom: 5px;
+}
+
+.encabezado p {
+  margin-bottom: 0;
+  color: #dbeafe;
+}
+
+.contenedor {
+  width: min(650px, 92%);
+  margin: 32px auto;
+}
+
+.presentacion {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.chat {
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 5px 20px #00000012;
+}
+
+.mensajes {
+  height: 300px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 8px 0 16px;
+}
+
+.mensaje {
+  padding: 12px 15px;
+  border-radius: 14px;
+  max-width: 88%;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.bot {
+  align-self: flex-start;
+  background: #e8eef7;
+}
+
+.usuario {
+  align-self: flex-end;
+  background: #d9f5e4;
+}
+
+.sugerencias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+button {
+  border: none;
+  border-radius: 9px;
+  padding: 11px 14px;
+  cursor: pointer;
+  background: #e2e8f0;
+  color: #17365d;
+  font-weight: bold;
+}
+
+button:hover {
+  filter: brightness(0.95);
+}
+
+#formulario {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  min-width: 0;
+  flex: 1;
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  font-size: 16px;
+}
+
+.enviar {
+  background: #17365d;
+  color: white;
+}
+
+.nota {
+  margin-top: 18px;
+  font-size: 13px;
+  color: #64748b;
+  text-align: center;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+button:focus-visible, input:focus-visible {
+  outline: 3px solid #60a5fa;
+  outline-offset: 2px;
+}
+
+@media (max-width: 450px) {
+  .chat {
+    padding: 12px;
+  }
+
+  #formulario {
+    flex-direction: column;
+  }
+
+  .enviar {
+    width: 100%;
+  }
+}
+
+.boton-edubot {
+  display: inline-block;
+  padding: 12px 22px;
+  background-color: #1769aa;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.boton-edubot:hover {
+  background-color: #104b7a;
+}
+
+@media (max-width: 600px) {
+  .boton-edubot {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

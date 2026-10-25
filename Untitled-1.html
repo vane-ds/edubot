@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduBot - Asistente Escolar</title>
+  <link rel="stylesheet" href="Untitled-1.css">
+  <script src="JAVA/Script" defer></script>
+  
+<a href="#edubot" class="boton-edubot">
+  🤖 Abrir EduBot
+</a>
+
+</head>
+<body>
+  <header class="encabezado">
+    <div class="logo">🎓</div>
+    <div>
+      <h1>EduBot</h1>
+      <p>Asistente virtual educativo</p>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <section class="presentacion">
+      <h2>¡Hola, estudiante!</h2>
+      <p>¿Qué información necesitas hoy?</p>
+    </section>
+
+    <section class="chat" aria-label="Chat con EduBot">
+      <div id="mensajes" class="mensajes" aria-live="polite">
+        <div class="mensaje bot">
+          ¡Hola! Soy EduBot. Puedo ayudarte con horarios,
+          tareas, evaluaciones y orientación escolar.
+        </div>
+      </div>
+
+      <div class="sugerencias">
+        <button data-pregunta="horarios">Horarios</button>
+        <button data-pregunta="tareas">Tareas</button>
+        <button data-pregunta="evaluaciones">Evaluaciones</button>
+        <button data-pregunta="orientacion">Orientación</button>
+      </div>
+
+      <form id="formulario">
+        <label class="sr-only" for="pregunta">
+          Escribe tu pregunta
+        </label>
+        <input
+          id="pregunta"
+          type="text"
+          placeholder="Escribe tu pregunta..."
+          autocomplete="off"
+          required
+        >
+        <button type="submit" class="enviar">Enviar</button>
+      </form>
+    </section>
+
+    <p class="nota">
+      EduBot ofrece orientación general. Confirma las fechas y
+      los horarios con los canales oficiales de tu institución.
+    </p>
+  </main>
+
+</body>
+</html>
